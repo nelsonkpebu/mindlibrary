@@ -320,7 +320,7 @@ const fetchData = async function (company) {
     const dayBefore = yesterday.getDate();
     const dayOfWeekIndexBefore = yesterday.getDay();
 
-    // const apiKey = "0bec4601ab9f4cb6be65af4d4399826c";
+    const apiKey = "0bec4601ab9f4cb6be65af4d4399826c";
 
     const url = `https://newsapi.org/v2/everything?q=${company}&from=${yearBefore}-${monthBefore}-${dayBefore}&to=${yearBefore}-${monthBefore}-${Math.abs(
       dayBefore - dayOfWeekIndexBefore
